@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cabecalho-footer.css">
+    <link rel="stylesheet" href="css/fav.css">
+    <link rel="shortcut icon" href="icon/new-ball.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>FutPegado</title>
+</head>
+<body>
+    <!--header-->
+<div class="header">
+    <div class="container">
+        <div class="nav">
+            <div>
+                <img class="icon-ball" src="icon/new-ball.png" alt="">
+            </div>
+            <div class="title-header">
+                <h2><span style="color:  rgb(45, 196, 45);" class="highlight">Fut</span>Pegado</h2>
+            </div>
+                <ul>
+                    <li class="nav-noticias"><a href="file:///E:/pi/desafio-site-pessoal/index.html">Notícias</a></li>
+                    <li class="nav-jogos"><a href="file:///E:/pi/desafio-site-pessoal/jogos.html">Jogos</a></li>
+                    <li class="current"><a href="file:///E:/pi/desafio-site-pessoal/favoritos.html">Favoritos</a></li>
+                    <li class="nav-dropdown">
+                        <button class="dropbtn">
+                            <i class="fas fa-user-circle"></i><span class="ola">Olá, Vinicius</span>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="file:///E:/pi/desafio-site-pessoal/login.html">Login</a>
+                            <a href="file:///E:/pi/desafio-site-pessoal/conta.html">Conta</a>
+                            <a class="sign-out" href="#">Sair</a>
+                          </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>
+<!--End header-->
+
+
+
+<div class="container">
+    <div class="jogadores-fav">
+        <img src="icon/player-generic.png" alt="">
+        <h1>Jogadores Favoritos</h1>
+    </div>
+    <div class="team-fav">
+        <img src="icon/team-generic.png" alt="">
+        <h1>Times Favoritos</h1>
+    </div>
+</div>
+
+<div class="container box-favoritos">
+    <div class="box">
+        <div id="jog1" class="jogador">
+            <div  onclick="aparecer(cris)" class="jog-imagem" >
+                <img src="img/jogador-cr7.png" alt="">
+            </div>
+            <span>C. Ronaldo</span>
+            <i onclick="desfavoritar(jog1)" class="fas fa-star"></i>
+        </div>
+        <div onclick="aparecer(mess)" id="jog2" class="jogador">
+            <div class="jog-imagem">
+                <img src="img/jogador-messi.png" alt="">
+            </div>
+            <span>Lionel Messi</span>
+            <i onclick="desfavoritar(jog2)" class="fas fa-star"></i>
+        </div>
+        <div onclick="aparecer(ney)" id="jog3" class="jogador">
+            <div class="jog-imagem">
+                <img src="img/jogador-neymar.png" alt="">
+            </div>
+            <span>Neymar Jr</span>
+            <i onclick="desfavoritar(jog3)" class="fas fa-star"></i>
+        </div>
+        <div onclick="aparecer(lew)" id="jog4" class="jogador">
+            <div class="jog-imagem">
+                <img src="img/jogador-lewa.png" alt="">
+            </div>
+            <span>Lewandowski</span>
+            <i onclick="desfavoritar(jog4)" class="fas fa-star"></i>
+        </div>
+        <div onclick="aparecer(man)" id="jog5" class="jogador">
+            <div class="jog-imagem">
+                <img src="img/jogador-manoel.png" alt="">
+            </div>
+            <span>Manoel</span>
+            <i onclick="desfavoritar(jog5)" class="fas fa-star"></i>
+        </div>
+    </div>
+
+    <div class="box">
+        <div id="time1" class="jogador">
+            <div class="jog-imagem" >
+                <img src="img/team-cor.png" alt="">
+            </div>
+            <span>Corinthians FC</span>
+            <i onclick="desfavoritar(time1)" class="fas fa-star"></i>
+        </div>
+        <div id="time2" class="jogador">
+            <div class="jog-imagem">
+                <img src="img/barcelona.png" alt="">
+            </div>
+            <span>Barcelona CF</span>
+            <i onclick="desfavoritar(time2)" class="fas fa-star"></i>
+        </div>
+        <div id="time3" class="jogador">
+            <div class="jog-imagem">
+                <img src="img/flag-borussia.png" alt="">
+            </div>
+            <span>Borussia Dortmund</span>
+            <i onclick="desfavoritar(time3)" class="fas fa-star"></i>
+        </div>
+        <div id="time4" class="jogador">
+            <div class="jog-imagem">
+                <img src="img/real-madrid.png" alt="">
+            </div>
+            <span>FC Real Madrid</span>
+            <i onclick="desfavoritar(time4)" class="fas fa-star"></i>
+        </div>
+        <div id="time5" class="jogador">
+            <div class="jog-imagem">
+                <img src="img/city.png" alt="">
+            </div>
+            <span>M. City FC</span>
+            <i onclick="desfavoritar(time5)" class="fas fa-star"></i>
+        </div>
+    </div>
+</div>
+
+ <!--CR7-->
+<div class="container">
+    <div style="display: block;" id="cris" class="box-jogador cr7 esquerdo">
+        <div style="background-image: url('img/wallpaper-cr7.jpg');" class="wallpaper">
+                <div class="imagem-circle">
+                </div>
+                <span>Cristiano Ronaldo</span>
+        </div>
+        <div class="country-team">
+            <div class="jogador-country">
+                <img src="img/flag-portugal.png" alt="">
+                <span>Portugal</span>
+            </div>
+            <div class="jogador-team">
+                <img src="img/flag-juve.png" alt="">
+                <span>Juventus</span>
+            </div>
+        </div>
+        <div class="info">
+            <div class="posicao">
+                <span>Posição</span>
+                <span>Atacante</span>
+            </div>
+            <div class="idade">
+                <span>Idade</span>
+                <span>35 anos</span>
+            </div>
+            <div class="altura">
+                <span>Altura</span>
+                <span>1,87cm</span>
+            </div>
+            <div class="peso">
+                <span>Peso</span>
+                <span>83</span>
+            </div>
+            <div class="camisa"><span>7</span></div>
+        </div>
+        <div class="title-temp">
+            <span>Temporada 2019/2020</span>
+            <img src="img/serie-A.png" alt="">
+            <select name="" id="">
+                <option value="">Serie A</option>
+                <option value="">Champions League</option>
+            </select>
+        </div>
+        <div class="estatisticas">
+            <div class="graficos">
+                <span>Partidas Disputadas</span>
+                <div class="chart" id="donutchartCr7" style="width: 99%;"></div>   
+            </div>
+            <div class="graficos">
+                <span>Gols e Assistências</span>
+                <div class="chart" id="chart_divCr7" style="width: 99%;"></div>
+            </div>
+            <div class="graficos">
+                <span>Cartões</span>
+                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
+                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+            </div>
+            <div class="graficos">
+                <span>Precisão</span>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
+            </div>
+        </div>
+    </div>
+
+        <!--end CR7-->
+
+
+        <!--Corinthians-->
+
+    <div style="float: right;" id="man" style="display: block;" class="box-jogador cor direito">
+        <div style="background-image: url('img/wallpaper-cor.jpg');" class="wallpaper">
+                <div class="imagem-circle">
+                </div>
+                <span>Corinthians</span>
+        </div>
+        <div class="country-team">
+            <div class="jogador-country">
+                <img src="img/flag-brazil.png" alt="">
+                <span>Brasil</span>
+            </div>
+        </div>
+        <div class="estadio">
+        </div>
+        <div class="title-temp">
+            <span>Temporada 2019/2020</span>
+            <img src="img/serie-A.png" alt="">
+            <select name="" id="">
+                <option value="">Serie A</option>
+                <option value="">Champions League</option>
+            </select>
+        </div>
+        
+    </div>
+
+
+ <!--end Corinthians-->
+
+    <!--Messi-->
+
+    <div id="mess" style="display: block;" class="box-jogador messi esquerdo">
+        <div style="background-image: url('img/wallpaper-messi.jpg');" class="wallpaper">
+                <div class="imagem-circle">
+                </div>
+                <span>Lionel Messi</span>
+        </div>
+        <div class="country-team">
+            <div class="jogador-country">
+                <img src="img/flag-argentina.png" alt="">
+                <span>Argentina</span>
+            </div>
+            <div class="jogador-team">
+                <img src="icon/barcelona.png" alt="">
+                <span>Barcelona</span>
+            </div>
+        </div>
+        <div class="info">
+            <div class="posicao">
+                <span>Posição</span>
+                <span>Atacante</span>
+            </div>
+            <div class="idade">
+                <span>Idade</span>
+                <span>32 anos</span>
+            </div>
+            <div class="altura">
+                <span>Altura</span>
+                <span>1,70cm</span>
+            </div>
+            <div class="peso">
+                <span>Peso</span>
+                <span>72</span>
+            </div>
+            <div class="camisa"><span>10</span></div>
+        </div>
+        <div class="title-temp">
+            <span>Temporada 2019/2020</span>
+            <img src="img/serie-A.png" alt="">
+            <select name="" id="">
+                <option value="">Serie A</option>
+                <option value="">Champions League</option>
+            </select>
+        </div>
+        <div class="estatisticas">
+            <div class="graficos">
+                <span>Partidas Disputadas</span>
+                <div class="chart" id="donutchartMessi" style="width: 99%;"></div>   
+            </div>
+            <div class="graficos">
+                <span>Gols e Assistências</span>
+                <div class="chart" id="chart_divMessi" style="width: 99%;"></div>
+            </div>
+            <div class="graficos">
+                <span>Cartões</span>
+                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
+                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+            </div>
+            <div class="graficos">
+                <span>Precisão</span>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
+            </div>
+        </div>
+    </div>
+
+ <!--end Messi-->
+
+<!--Barcelona-->
+
+<div style="float: right;" id="man" style="display: block;" class="box-jogador bar direito">
+    <div style="background-image: url('img/wallpaper-barcelona.jpg');" class="wallpaper">
+            <div class="imagem-circle">
+            </div>
+            <span>Barcelona</span>
+    </div>
+    <div class="country-team">
+        <div class="jogador-country">
+            <img src="img/flag-brazil.png" alt="">
+            <span>Brasil</span>
+        </div>
+    </div>
+    <div class="info">
+        <div class="posicao">
+            <span>Posição</span>
+            <span>Zagueiro</span>
+        </div>
+        <div class="idade">
+            <span>Idade</span>
+            <span>30 anos</span>
+        </div>
+        <div class="altura">
+            <span>Altura</span>
+            <span>1,81cm</span>
+        </div>
+        <div class="peso">
+            <span>Peso</span>
+            <span>82</span>
+        </div>
+    </div>
+    <div class="title-temp">
+        <span>Temporada 2019/2020</span>
+        <img src="img/serie-A.png" alt="">
+        <select name="" id="">
+            <option value="">Serie A</option>
+            <option value="">Champions League</option>
+        </select>
+    </div>
+    
+</div>
+
+
+<!--end Barcelona-->
+
+ <!--Neymar-->
+
+    <div id="ney" style="display: block;" class="box-jogador ney esquerdo">
+        <div style="background-image: url('img/wallpaper-neymar.jpg');" class="wallpaper">
+                <div class="imagem-circle">
+                </div>
+                <span>Neymar Jr</span>
+        </div>
+        <div class="country-team">
+            <div class="jogador-country">
+                <img src="img/flag-brazil.png" alt="">
+                <span>Brasil</span>
+            </div>
+            <div class="jogador-team">
+                <img src="img/flag-psg.png" alt="">
+                <span>PSG</span>
+            </div>
+        </div>
+        <div class="info">
+            <div class="posicao">
+                <span>Posição</span>
+                <span>Atacante</span>
+            </div>
+            <div class="idade">
+                <span>Idade</span>
+                <span>32 anos</span>
+            </div>
+            <div class="altura">
+                <span>Altura</span>
+                <span>1,70cm</span>
+            </div>
+            <div class="peso">
+                <span>Peso</span>
+                <span>72</span>
+            </div>
+            <div class="camisa"><span>11</span></div>
+        </div>
+        <div class="title-temp">
+            <span>Temporada 2019/2020</span>
+            <img src="img/serie-A.png" alt="">
+            <select name="" id="">
+                <option value="">Serie A</option>
+                <option value="">Champions League</option>
+            </select>
+        </div>
+        <div class="estatisticas">
+            <div class="graficos">
+                <span>Partidas Disputadas</span>
+                <div class="chart" id="donutchartNey" style="width: 99%;"></div>   
+            </div>
+            <div class="graficos">
+                <span>Gols e Assistências</span>
+                <div class="chart" id="chart_divNey" style="width: 99%;"></div>
+            </div>
+            <div class="graficos">
+                <span>Cartões</span>
+                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
+                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+            </div>
+            <div class="graficos">
+                <span>Precisão</span>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
+            </div>
+        </div>
+    </div>
+
+
+ <!--end Neymar-->
+ 
+ <!--Borussia-->
+
+ <div style="float: right;" id="man" style="display: block;" class="box-jogador bor direito">
+    <div style="background-image: url('img/wallpaper-borussia.jpg');" class="wallpaper">
+            <div class="imagem-circle">
+            </div>
+            <span>Borussia Dortmund</span>
+    </div>
+    <div class="country-team">
+        <div class="jogador-country">
+            <img src="img/flag-brazil.png" alt="">
+            <span>Brasil</span>
+        </div>
+    </div>
+    <div class="info">
+        <div class="posicao">
+            <span>Posição</span>
+            <span>Zagueiro</span>
+        </div>
+        <div class="idade">
+            <span>Idade</span>
+            <span>30 anos</span>
+        </div>
+        <div class="altura">
+            <span>Altura</span>
+            <span>1,81cm</span>
+        </div>
+        <div class="peso">
+            <span>Peso</span>
+            <span>82</span>
+        </div>
+    </div>
+    <div class="title-temp">
+        <span>Temporada 2019/2020</span>
+        <img src="img/serie-A.png" alt="">
+        <select name="" id="">
+            <option value="">Serie A</option>
+            <option value="">Champions League</option>
+        </select>
+    </div>
+    
+</div>
+
+
+<!--end Borussia-->
+
+   <!--Lewa-->
+
+    <div id="lew" style="display: block;" class="box-jogador lewa esquerdo">
+        <div style="background-image: url('img/wallpaper-lewa.jpg');" class="wallpaper">
+                <div class="imagem-circle">
+                </div>
+                <span>Lewandowski</span>
+        </div>
+        <div class="country-team">
+            <div class="jogador-country">
+                <img src="img/flag-polonia.png" alt="">
+                <span>Polônia</span>
+            </div>
+            <div class="jogador-team">
+                <img src="img/flag-bayern.png" alt="">
+                <span>Bayern München</span>
+            </div>
+        </div>
+        <div class="info">
+            <div class="posicao">
+                <span>Posição</span>
+                <span>Atacante</span>
+            </div>
+            <div class="idade">
+                <span>Idade</span>
+                <span>32 anos</span>
+            </div>
+            <div class="altura">
+                <span>Altura</span>
+                <span>1,70cm</span>
+            </div>
+            <div class="peso">
+                <span>Peso</span>
+                <span>72</span>
+            </div>
+            <div class="camisa"><span>9</span></div>
+        </div>
+        <div class="title-temp">
+            <span>Temporada 2019/2020</span>
+            <img src="img/serie-A.png" alt="">
+            <select name="" id="">
+                <option value="">Serie A</option>
+                <option value="">Champions League</option>
+            </select>
+        </div>
+        <div class="estatisticas">
+            <div class="graficos">
+                <span>Partidas Disputadas</span>
+                <div class="chart" id="donutchartLewa" style="width: 99%;"></div>   
+            </div>
+            <div class="graficos">
+                <span>Gols e Assistências</span>
+                <div class="chart" id="chart_divLewa" style="width: 99%;"></div>
+            </div>
+            <div class="graficos">
+                <span>Cartões</span>
+                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
+                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+            </div>
+            <div class="graficos">
+                <span>Precisão</span>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
+            </div>
+        </div>
+    </div>
+
+ <!--end Lewa-->
+ 
+<!--Real Madrid-->
+
+<div style="float: right;" id="man" style="display: block;" class="box-jogador real direito">
+    <div style="background-image: url('img/wallpaper-real.jpg');" class="wallpaper">
+            <div class="imagem-circle">
+            </div>
+            <span>Real Madrid</span>
+    </div>
+    <div class="country-team">
+        <div class="jogador-country">
+            <img src="img/flag-brazil.png" alt="">
+            <span>Brasil</span>
+        </div>
+    </div>
+    <div class="info">
+        <div class="posicao">
+            <span>Posição</span>
+            <span>Zagueiro</span>
+        </div>
+        <div class="idade">
+            <span>Idade</span>
+            <span>30 anos</span>
+        </div>
+        <div class="altura">
+            <span>Altura</span>
+            <span>1,81cm</span>
+        </div>
+        <div class="peso">
+            <span>Peso</span>
+            <span>82</span>
+        </div>
+    </div>
+    <div class="title-temp">
+        <span>Temporada 2019/2020</span>
+        <img src="img/serie-A.png" alt="">
+        <select name="" id="">
+            <option value="">Serie A</option>
+            <option value="">Champions League</option>
+        </select>
+    </div>
+    
+</div>
+
+
+<!--end Real Madrid-->
+
+<!--Manoel-->
+
+    <div id="man" style="display: block;" class="box-jogador man esquerdo">
+        <div style="background-image: url('img/wallpaper-manoel.jpg');" class="wallpaper">
+                <div class="imagem-circle">
+                </div>
+                <span>Manoel</span>
+        </div>
+        <div class="country-team">
+            <div class="jogador-country">
+                <img src="img/flag-brazil.png" alt="">
+                <span>Brasil</span>
+            </div>
+            <div class="jogador-team">
+                <img src="img/team-cor.png" alt="">
+                <span>Corinthians FC</span>
+            </div>
+        </div>
+        <div class="info">
+            <div class="posicao">
+                <span>Posição</span>
+                <span>Zagueiro</span>
+            </div>
+            <div class="idade">
+                <span>Idade</span>
+                <span>30 anos</span>
+            </div>
+            <div class="altura">
+                <span>Altura</span>
+                <span>1,81cm</span>
+            </div>
+            <div class="peso">
+                <span>Peso</span>
+                <span>82</span>
+            </div>
+            <div class="camisa"><span>23</span></div>
+        </div>
+        <div class="title-temp">
+            <span>Temporada 2019/2020</span>
+            <img src="img/serie-A.png" alt="">
+            <select name="" id="">
+                <option value="">Serie A</option>
+                <option value="">Champions League</option>
+            </select>
+        </div>
+        <div class="estatisticas">
+            <div class="graficos">
+                <span>Partidas Disputadas</span>
+                <div class="chart" id="donutchartManoel" style="width: 99%;"></div>   
+            </div>
+            <div class="graficos">
+                <span>Gols e Assistências</span>
+                <div class="chart" id="chart_divManoel" style="width: 99%;"></div>
+            </div>
+            <div class="graficos">
+                <span>Cartões</span>
+                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
+                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+            </div>
+            <div class="graficos">
+                <span>Precisão</span>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
+            </div>
+        </div>
+    </div>
+
+    <!--end Manoel-->
+
+    <!--City-->
+
+    <div style="float: right;" id="man" style="display: block;" class="box-jogador city direito">
+        <div style="background-image: url('img/wallpaper-city.jpg');" class="wallpaper">
+                <div class="imagem-circle">
+                </div>
+                <span>M. City</span>
+        </div>
+        <div class="country-team">
+            <div class="jogador-country">
+                <img src="img/flag-brazil.png" alt="">
+                <span>Brasil</span>
+            </div>
+        </div>
+        <div class="info">
+            <div class="posicao">
+                <span>Posição</span>
+                <span>Zagueiro</span>
+            </div>
+            <div class="idade">
+                <span>Idade</span>
+                <span>30 anos</span>
+            </div>
+            <div class="altura">
+                <span>Altura</span>
+                <span>1,81cm</span>
+            </div>
+            <div class="peso">
+                <span>Peso</span>
+                <span>82</span>
+            </div>
+        </div>
+        <div class="title-temp">
+            <span>Temporada 2019/2020</span>
+            <img src="img/serie-A.png" alt="">
+            <select name="" id="">
+                <option value="">Serie A</option>
+                <option value="">Champions League</option>
+            </select>
+        </div>
+        
+    </div>
+
+
+ <!--end City-->
+</div>
+ 
+
+
+
+ 
+
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-left">
+            <h2>Lorem ipsum dolor sit</h2>
+            <ul>
+                <li class="footer-topics">Lorem ipsum dolor</li>
+                <li class="footer-topics">Voluptate officiis adipisci vel</li>
+                <li class="footer-topics">Nisi ducimus veritatis culpa quasi eius saepe assumenda unde dignissimos voluptatibus, repellat dolor!</li>
+                <li class="footer-topics">ducimus veritatis culpa quasi eius saepe assumenda unde dignissimos voluptatibus</li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <a class="link-social-media" target="_blank" href="https://www.facebook.com/profile.php?id=100012290652502">
+                <li class="li-icon-social-media">
+                    <i class="fab fa-facebook-square"></i>
+                </li>
+                </a>
+                <a class="link-social-media" href="">
+                    <li class="li-icon-social-media">
+                        <i class="fab fa-github-square"></i>
+                </li>
+                </a>
+                <a class="link-social-media" href=""><li class="li-icon-social-media">
+                    <i class="fab fa-twitter-square"></i>
+                </li>
+                </a>
+                <a class="link-social-media" href="">
+                    <li class="li-icon-social-media">
+                        <i class="fab fa-linkedin"></i>
+                </li>
+                </a>
+            </ul>
+        </div>
+        <div class="new"> 
+            <div class="footer-email">
+               
+                <form>
+                    <input type="email" placeholder="Seu email aqui">
+                    <button type="submit" class="btn-green">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-copyright">
+    © copyright <b>Futpegado</b>. Todos direitos reservados. <br>
+        Design by <b>Eu mesmo.</b>
+</div>
+</body>
+</html>
+<script>
+    
+    function desfavoritar(tirar){
+        tirar.style.display = "none";
+    }
+    function aparecer(jog){
+        jog.style.display = "block";
+    }
+
+ 
+
+
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Partidas', 38],
+      ['P/ disputadas', 22]
+    ]);
+
+    var options = {
+      pieHole: 0.3,
+      pieSliceText: 'value',
+      pieSliceTextStyle: {
+            color: 'black',
+            fontSize: 15
+          },
+      legend: { position: "bottom" },
+      slices: {
+            0: { color: '#A8DFA8' },
+            1: { color: '#2DC42D' }
+          }, 
+         
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchartCr7'));
+    chart.draw(data, options);
+  }
+</script>
+<script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawStacked);
+
+function drawStacked() {
+      var data = google.visualization.arrayToDataTable([
+        ['','Marcou' , { role: 'style' }, 'Jogos', { role: 'style' }],
+        ['Gols', 21,'#2DC42D' , 38, '#A8DFA8'],
+        ['Assistências',3,'#2DC42D',  38, '#A8DFA8'],
+      ]);
+
+      var options = {
+        chartArea: {width: '70%'},
+        colors: ['#2DC42D', '#A8DFA8'],
+        isStacked: true,
+        legend: { position: "bottom" },
+        
+        hAxis: {
+          minValue: 0,
+        },
+        vAxis: {
+        }
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('chart_divCr7'));
+      chart.draw(data, options);
+    }
+  </script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Partidas', 38],
+        ['P/ disputadas', 22]
+      ]);
+  
+      var options = {
+        pieHole: 0.3,
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+              color: 'black',
+              fontSize: 15
+            },
+        legend: { position: "bottom" },
+        slices: {
+              0: { color: '#A8DFA8' },
+              1: { color: '#2DC42D' }
+            }, 
+           
+      };
+  
+      var chart = new google.visualization.PieChart(document.getElementById('donutchartMessi'));
+      chart.draw(data, options);
+    }
+  </script>
+  <script type="text/javascript">
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawStacked);
+  
+  function drawStacked() {
+        var data = google.visualization.arrayToDataTable([
+          ['','Marcou' , { role: 'style' }, 'Jogos', { role: 'style' }],
+          ['Gols', 21,'#2DC42D' , 38, '#A8DFA8'],
+          ['Assistências',3,'#2DC42D',  38, '#A8DFA8'],
+        ]);
+  
+        var options = {
+          chartArea: {width: '70%'},
+          colors: ['#2DC42D', '#A8DFA8'],
+          isStacked: true,
+          legend: { position: "bottom" },
+          
+          hAxis: {
+            minValue: 0,
+          },
+          vAxis: {
+          }
+        };
+        var chart = new google.visualization.BarChart(document.getElementById('chart_divMessi'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Partidas', 38],
+            ['P/ disputadas', 22]
+          ]);
+      
+          var options = {
+            pieHole: 0.3,
+            pieSliceText: 'value',
+            pieSliceTextStyle: {
+                  color: 'black',
+                  fontSize: 15
+                },
+            legend: { position: "bottom" },
+            slices: {
+                  0: { color: '#A8DFA8' },
+                  1: { color: '#2DC42D' }
+                }, 
+               
+          };
+      
+          var chart = new google.visualization.PieChart(document.getElementById('donutchartNey'));
+          chart.draw(data, options);
+        }
+      </script>
+      <script type="text/javascript">
+          google.charts.load('current', {packages: ['corechart', 'bar']});
+      google.charts.setOnLoadCallback(drawStacked);
+      
+      function drawStacked() {
+            var data = google.visualization.arrayToDataTable([
+              ['','Marcou' , { role: 'style' }, 'Jogos', { role: 'style' }],
+              ['Gols', 21,'#2DC42D' , 38, '#A8DFA8'],
+              ['Assistências',3,'#2DC42D',  38, '#A8DFA8'],
+            ]);
+      
+            var options = {
+              chartArea: {width: '70%'},
+              colors: ['#2DC42D', '#A8DFA8'],
+              isStacked: true,
+              legend: { position: "bottom" },
+              
+              hAxis: {
+                minValue: 0,
+              },
+              vAxis: {
+              }
+            };
+            var chart = new google.visualization.BarChart(document.getElementById('chart_divNey'));
+            chart.draw(data, options);
+          }
+        </script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Partidas', 38],
+        ['P/ disputadas', 22]
+      ]);
+  
+      var options = {
+        pieHole: 0.3,
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+              color: 'black',
+              fontSize: 15
+            },
+        legend: { position: "bottom" },
+        slices: {
+              0: { color: '#A8DFA8' },
+              1: { color: '#2DC42D' }
+            }, 
+           
+      };
+  
+      var chart = new google.visualization.PieChart(document.getElementById('donutchartLewa'));
+      chart.draw(data, options);
+    }
+  </script>
+  <script type="text/javascript">
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawStacked);
+  
+  function drawStacked() {
+        var data = google.visualization.arrayToDataTable([
+          ['','Marcou' , { role: 'style' }, 'Jogos', { role: 'style' }],
+          ['Gols', 21,'#2DC42D' , 38, '#A8DFA8'],
+          ['Assistências',3,'#2DC42D',  38, '#A8DFA8'],
+        ]);
+  
+        var options = {
+          chartArea: {width: '70%'},
+          colors: ['#2DC42D', '#A8DFA8'],
+          isStacked: true,
+          legend: { position: "bottom" },
+          
+          hAxis: {
+            minValue: 0,
+          },
+          vAxis: {
+          }
+        };
+        var chart = new google.visualization.BarChart(document.getElementById('chart_divLewa'));
+        chart.draw(data, options);
+      }
+    </script>
+<script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Partidas', 38],
+        ['P/ disputadas', 22]
+      ]);
+  
+      var options = {
+        pieHole: 0.3,
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+              color: 'black',
+              fontSize: 15
+            },
+        legend: { position: "bottom" },
+        slices: {
+              0: { color: '#A8DFA8' },
+              1: { color: '#2DC42D' }
+            }, 
+           
+      };
+  
+      var chart = new google.visualization.PieChart(document.getElementById('donutchartManoel'));
+      chart.draw(data, options);
+    }
+  </script>
+  <script type="text/javascript">
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawStacked);
+  
+  function drawStacked() {
+        var data = google.visualization.arrayToDataTable([
+          ['','Marcou' , { role: 'style' }, 'Jogos', { role: 'style' }],
+          ['Gols', 21,'#2DC42D' , 38, '#A8DFA8'],
+          ['Assistências',3,'#2DC42D',  38, '#A8DFA8'],
+        ]);
+  
+        var options = {
+          chartArea: {width: '70%'},
+          colors: ['#2DC42D', '#A8DFA8'],
+          isStacked: true,
+          legend: { position: "bottom" },
+          
+          hAxis: {
+            minValue: 0,
+          },
+          vAxis: {
+          }
+        };
+        var chart = new google.visualization.BarChart(document.getElementById('chart_divManoel'));
+        chart.draw(data, options);
+      }
+    </script>

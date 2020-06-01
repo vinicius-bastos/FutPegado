@@ -1,0 +1,378 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5f4;
+}
+
+.content{
+    border-radius: 10px;
+    background-color: white;
+    width: 960px;
+    height: 60%;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(78, 78, 78, 0.034) 6px 6px 6px 6px;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(45, 196, 45);
+    width: 40%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    left: 0;
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+}
+.title-primary{
+    color: #fff;
+    text-transform: capitalize;
+}
+.title .title-second:not(:last-child) {
+    text-transform: capitalize;
+}
+.title-second{
+    color: rgb(45, 196, 45);
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary{
+    color: #fff;
+}
+.description-second{
+    color: rgb(121, 138, 121);
+}
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 10px 30px;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin: 5px 0px;
+}
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+}
+.btn-second{
+    background-color: rgb(45, 196, 45);
+    border: 1px solid rgb(45, 196, 45);
+    color:rgb(255, 255, 255) ;
+    font-weight: bold;
+}
+.btn-second:hover{
+    background-color: transparent;
+    color:rgb(45, 196, 45) ;
+    transition: 0.4s;
+}
+.btn-primary:hover{
+    background-color: white;
+    color:rgb(45, 196, 45) ;
+    transition: 0.4s;
+}
+.first-content{
+    display: flex;
+}
+.first-content .second-column{
+    z-index: 11;
+}
+.first-column{
+    width: 20.7%;
+    text-align: center;
+    z-index: 10;
+    width: 40%;
+}
+.second-column{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.social-media{
+    margin: 8px 0px;
+}
+
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media  {
+    border: 1px solid rgb(183, 218, 183);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color:rgb(183, 218, 183) ;
+}
+
+
+.link-social-media:not(:first-child) {
+    margin-left: 10px;
+}
+.link-social-media .item-social-media {
+    transition: background-color .5s;
+}
+.link-social-media:hover .item-social-media{
+    background-color: rgb(183, 218, 183);
+    color: #fff;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input{
+    height: 45px;
+    width: 100%;
+    border-radius: 4px 4px 4px 4px;
+    border: 2px rgb(183, 218, 183) solid;
+    padding-left: 5px;
+    background-color: rgb(183, 218, 183);
+}
+.label-input{
+    background-color:rgb(183, 218, 183) ;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-radius: 4px 4px 4px 4px;
+}
+.icon-modify{
+    color: rgb(95, 95, 95);
+    padding: 5px;
+}
+.second-content{
+    position: absolute;
+    display: flex;
+}
+.second-content .first-column{
+    order: 2;
+    z-index: -1;
+}
+.second-content .second-column{
+    order: 1;
+    z-index: -1;
+}
+.forgot-password {
+    color: rgb(111, 133, 111);
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+}
+.forgot-password::first-letter {
+    text-transform: capitalize;
+}
+
+.sign-in-js .first-content .first-column,
+.sign-in-js .first-content .second-column{
+    z-index: -1;
+}
+
+.sign-in-js .second-content .second-column{
+    z-index: 11;
+}
+.sign-in-js .second-content .first-column{
+    z-index: 13;
+}
+.sign-in-js .first-content .second-column{
+    animation: signin-opacity 2s;
+}
+.sign-in-js .second-content .first-column{
+    animation: signin-opacity-1 2s;
+}
+.sign-in-js .content::before{
+    border-radius: 0px 10px 10px 0px;
+    left: 60%;
+    animation: slidein 2s;
+    z-index: 12;
+}
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column{
+    z-index: -1;
+}
+
+.sign-up-js .first-content .first-column,
+.sign-up-js .first-content .first-column{
+    z-index: 13;
+}
+.sign-up-js .second-content .second-column{
+    animation: signup-opacity 2s;
+}
+.sign-up-js .first-content .first-column{
+    animation: signup-opacity-1 2s;
+}
+.sign-up-js .first-content .second-column{
+    z-index: 11;
+}
+.sign-up-js .content::before{
+    border-radius: 10px 0px 0px 10px;
+    left: 0%;
+    animation: slideup 2s;
+
+    z-index: 12;
+}
+
+/*Animação CSS*/
+
+
+@keyframes slidein{
+
+    from{
+        left: 0;
+        width: 40%;
+    }
+    
+
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+@keyframes signin-opacity-1{
+
+    from{
+        z-index: -2;
+    }
+    35% {
+        z-index: 13;
+        
+    }
+    to{
+        z-index: 13;
+    }
+}
+@keyframes signin-opacity{
+
+    from{
+       opacity: 1;
+       z-index: 12;
+    }
+    5% {
+        opacity: 0.8;
+        
+    }
+    10% {
+        opacity: 0.6;
+        
+    }
+    15% {
+        opacity: 0.4;
+        
+    }
+    
+    20% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 0;
+        
+    }
+
+
+    50%{
+        opacity: 0;
+        z-index: 12;
+    }
+
+    75%{
+        opacity: 0;
+        z-index: 12;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+@keyframes signup-opacity-1{
+
+    from{
+        z-index: -2;
+    }
+    35% {
+        z-index: 13;
+        
+    }
+    to{
+        z-index: 13;
+    }
+}
+@keyframes signup-opacity{
+
+    from{
+       opacity: 1;
+       z-index: 12;
+    }
+    5% {
+        opacity: 0.8;
+        
+    }
+    10% {
+        opacity: 0.6;
+        
+    }
+    15% {
+        opacity: 0.4;
+        
+    }
+    
+    20% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 0;
+        
+    }
+
+
+    50%{
+        opacity: 0;
+        z-index: 12;
+    }
+
+    75%{
+        opacity: 0;
+        z-index: 12;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes slideup{
+
+    from{
+        left: 60%;
+        width: 40%;
+    }
+
+    to{
+        left: 0;
+        width: 40%;
+    }
+}
+

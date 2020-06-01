@@ -1,0 +1,370 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.title-main-news{
+    margin-top: 25px;
+}
+.main-live{
+    float: left;
+    width: 7%;
+    height: 70px;
+    margin-top: 14px;
+    
+}
+.title-main-news h1{
+    float: left;
+    padding-left: 1%;
+    font-size: 40px;
+   
+}
+.world-england{
+    display: inline;
+    display: flex;
+    float: left;
+}
+.world-england:nth-child(2){
+    float: right;
+    margin-right: 5%;
+}
+
+.title-jogos{
+    display: inline;
+    margin-top: 25px;
+
+}
+.world-img{
+    float: left;
+    width: 7%;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+
+.title-main-news h2{
+    float: left;
+    padding-left: 1%;
+    font-size: 40px;
+    
+}
+
+
+.container .matches{
+    height: 325px;
+    width: 45%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+    margin-bottom: 30px;
+}
+
+.matches .result span{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: left;
+    margin-top: 20px;
+    margin-left: 4%;
+}
+.matches .liga {
+    margin-bottom: 1%;
+    float: left;
+ }
+
+.liga .liga-icon{
+   width: 30%;
+}
+.liga .liga-icon-champions{
+    width: 20%;
+    padding-left: 8px;
+    padding-top: 5px;
+ }
+.matches .tempo{
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+ .tempo span{
+    color: rgb(45, 196, 45);
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.matches .tempo img{
+    width: 6%;
+    padding-right: 2%;
+}
+
+
+ .first-team{
+    float: left;
+    width: 40%;
+    
+}
+.first-team .name-team{
+    float: left;
+    padding-left: 15%;
+}
+.first-time-img{
+    width: 40%;
+    padding-left: 30%;
+}
+ .second-team{
+    float: right;
+
+    width: 40%;
+}
+.second-team .name-team{
+    float: left;
+    padding-left: 18%;
+}
+.first-team .name-team3{
+    float: left;
+    padding-left: 27%;
+}
+.second-team .name-team4{
+    float: left;
+    padding-left: 27%;
+}
+.second-time-img{
+    width: 40%;
+    padding-left: 30%;
+}
+.see-more{
+    margin-top: 150px;
+    height: 27px;
+}
+.see-more img{
+   margin-left: 48%;
+   width: 4%;
+   cursor: pointer;
+}
+
+.ver-estatisticas{
+    text-align: center;
+    color: rgb(73, 73, 73);
+}
+.title-estatisticas{
+    text-align: center;
+}
+.formacao-jogo{
+    width: 80%;
+    margin-left: 10%;
+}
+.escalação-time1{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    border-right: 2px solid rgb(45, 196, 45);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.escalação-time2{
+    float: right;
+    width: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tipo-formacao{
+    text-align: center;
+    color: rgb(45, 196, 45);
+}
+.tipo-formaca-2{
+    text-align: center;
+    margin-right: 37%;
+}
+.tit-res{
+    font-weight: bold;
+    color: rgb(45, 196, 45);
+    font-size: 20px;
+}
+.ver-escalacao{
+    height: 27px;
+}
+.ver-escalacao img{
+    margin-left: 48%;
+    width: 4%;
+    cursor: pointer;
+ }
+ .ver-estatisticas-2{
+    text-align: center;
+    color: rgb(73, 73, 73);
+    
+}
+.container .tabela{
+    float: right;
+    width: 50%;
+    height: 328px;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+    margin-right: 1%;
+    
+}
+
+table{
+    border-collapse: collapse; /* CSS2 */
+    background: rgb(255, 255, 255);
+}
+
+table td{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border: rgba(52, 255, 52, 0.185) 1px solid;
+}
+
+.liga .square{
+    width: 2%;
+    float: right;
+    margin-top: 23px;
+    margin-right: 0.5%;
+}
+.liga span{
+    float: right;
+    margin-top: 17px;
+    margin-right: 4%;
+}
+
+table tr:nth-child(2) td span{
+    color: rgb(16, 91, 189);
+}
+table tr:nth-child(3) td span{
+    color: rgb(16, 91, 189);
+}
+table tr:nth-child(4) td span{
+    color: rgb(16, 91, 189);
+}
+table tr:nth-child(5) td span{
+    color: rgb(16, 91, 189);
+}
+table tr:nth-child(6) td span{
+    color: rgb(255, 188, 2);
+}
+table tr:nth-child(18) td span{
+    color: rgb(255, 0, 0);
+}
+table tr:nth-child(19) td span{
+    color: rgb(255, 0, 0);
+}
+table tr:nth-child(20) td span{
+    color: rgb(255, 0, 0);
+}
+table tr:nth-child(21) td span{
+    color: rgb(255, 0, 0);
+}
+table tr td span{
+    color: rgb(138, 138, 138);
+}
+.tabela-mata-mata tr:nth-child(2) td span{
+    color: rgb(16, 91, 189);
+}
+.tabela-mata-mata tr:nth-child(3) td span{
+    color: rgb(16, 91, 189);
+}
+.tabela-mata-mata tr:nth-child(4) td span{
+    color: rgb(255, 188, 2);
+}
+.tabela-mata-mata tr:nth-child(5) td span{
+    color: rgb(138, 138, 138);
+}
+
+
+table .table-titles td{
+    color: rgb(138, 138, 138);
+    
+}
+
+table td:nth-child(11){
+    padding-left: 0%;
+    padding-right: 0%;
+}
+table td:nth-child(10){
+    background-color: rgba(52, 255, 52, 0.185);
+}
+table td:nth-child(8){
+    background-color: rgba(52, 255, 52, 0.185);
+}
+table td:nth-child(6){
+    background-color: rgba(52, 255, 52, 0.185);
+}
+table td:nth-child(4){
+    background-color: rgba(52, 255, 52, 0.185);
+}
+table td:nth-child(2){
+    background-color: rgba(52, 255, 52, 0.185);
+}
+
+table td li img{
+    width: 9px;
+}
+
+table td ul {
+    list-style-type: none;
+    display: flex;
+}
+table td li {
+    padding-right: 5px;
+    float: left;
+}
+.last-circle{
+    margin-right: 30px;
+    
+}
+.liga-icon-champions-tabela{
+    width: 20%;
+    padding-left: 8px;
+    padding-top: 5px;
+}
+.tabela .grupos span{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 13px;
+    padding-top: 100px;
+    color: rgb(54, 54, 54);
+}
+.tabela .grupos:not(:first-child){
+  padding-top: 30px;
+}
+.tabela::-webkit-scrollbar{
+    background-color: #e9e7da;
+    height: 10px;
+    width: 10px;
+}
+.tabela::-webkit-scrollbar-track {
+  background-color: #e9e7da;
+}
+
+
+.tabela::-webkit-scrollbar-thumb {
+    background-color: rgb(102, 223, 102);
+    border-radius: 6px;
+}
+
+
+.tabela::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(45, 196, 45);
+}
+
+.matches::-webkit-scrollbar{
+    background-color: #e9e7da;
+    height: 10px;
+    width: 10px;
+}
+.matches::-webkit-scrollbar-track {
+  background-color: #e9e7da;
+}
+
+
+.matches::-webkit-scrollbar-thumb {
+    background-color: rgb(102, 223, 102);
+    border-radius: 6px;
+}
+
+
+.matches::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(45, 196, 45);
+}

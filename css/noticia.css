@@ -1,0 +1,383 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.title-main-news{
+    margin-top: 25px;
+}
+.main-fire{
+    float: left;
+    width: 5%;
+    height: 50px;
+    margin-top: 28px;
+    
+}
+.title-main-news h1{
+    float: left;
+    padding-left: 2%;
+    font-size: 40px;
+   
+}
+.main-news{
+    width: 100%;
+    height: 400px;
+    margin-bottom:35px;
+    border-radius: 6px 6px 6px 6px;
+}
+.main-img{
+    height: 400px;
+    width: 60%;
+    float: left;
+    border-radius: 6px 0px 0px 6px;
+    background-size: 100%;
+    background-image: url("../img/rakitic-neymar.jpg");
+}
+.main-img:hover{
+    background-image: url("../img/rakitic-neymar.jpg");
+    background-size: 110% ;
+    transition-duration: 0.6s;
+}
+
+
+
+.main-description:hover {
+    background-color: rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
+
+.main-description{
+    float: right;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(34, 39, 33);
+    color: white;
+    border-radius: 0px 6px 6px 0px;
+}
+
+
+
+.main-description h1{
+    float: left;
+    padding-top: 150px;
+    padding-right: 50px;
+    padding-left: 15px;
+}
+
+.emoji-main{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    
+
+}
+.fonte-ge{
+    width: 40px;
+    float: right;
+    margin-right: 70px;
+}
+
+.other-news{
+    margin-right: 6.6%;
+    margin-bottom: 30px;
+    float: left;
+    background-color: rgb(34, 39, 33);
+    width: 20%;
+    height: 350px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+}
+.other-news .other-top-1 {
+    background-image: url("../img/neymar.gif");
+    background-size: 100%;
+    height: 50%;
+    border-radius: 4px 4px 0px 0px;
+}
+.other-top-1:hover {
+    background-size: 130%;
+    transition: 0.8s;
+}
+.other-news .other-top-2 {
+    background-image: url("../img/adriano.jpg");
+    background-size: 90%;
+    height: 50%;
+    border-radius: 4px 4px 0px 0px;
+}
+.other-top-2:hover {
+    background-size: 120%;
+    transition: 0.8s;
+}
+
+.other-news .other-top-3 {
+    background-image: url("../img/ronaldinho.gif");
+    background-size: 112%;
+    height: 50%;
+    border-radius: 4px 4px 0px 0px;
+}
+.other-top-3:hover {
+    background-size: 130%;
+    transition: 0.8s;
+}
+.other-news .other-bottom  {
+    background-color: rgb(34, 39, 33);
+    padding-top: 1px;
+    color: white;
+    height: 50%;
+    border-radius: 0px 0px 4px 4px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+
+
+
+.other-news-4{
+    float: right;
+    margin-bottom: 30px;
+    background-color: rgb(34, 39, 33);
+    width: 20%;
+    height: 350px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+}
+.other-news-4 .other-top-4 {
+    background-image: url("../img/briga.gif");
+    background-size: 120%;
+    height: 50%;
+    border-radius: 4px 4px 0px 0px;
+}
+.other-news-4 .other-bottom  {
+    background-color: rgb(34, 39, 33);
+    padding-top: 1px;
+    color: white;
+    height: 50%;
+    border-radius: 0px 0px 4px 4px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.other-bottom:hover  {
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+.other-top-4:hover {
+    background-size: 130%;
+    transition: 0.8s;
+}
+.emoji-other{
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+
+/*Transferencia*/
+.linha-transferencia{
+    margin-top: 80px;
+}
+.linha-left{
+    margin-top: 35px;
+    float: left;
+}
+.title-tranferencia{
+    float: left;
+    color: rgb(126, 126, 126);
+    margin-left: 30px;
+    
+}
+.linha-right{
+    float: right;
+    margin-top: 35px;
+}
+.change-icon{
+    float: left;
+    width: 5%;
+    height: 50px;
+    margin-top: 84px;
+    
+}
+.title-main-change h1{
+    float: left;
+    padding-left: 2%;
+    font-size: 40px;
+    margin-top: 80px;
+   
+}
+.change-1{
+    float: left;
+    margin-bottom: 30px;
+    background-color: rgb(34, 39, 33);
+    width: 46.7%;
+    height: 500px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+}
+.change-1 .change-top-1 {
+    background-image: url("../img/de-bruyne.jpg");
+    background-size: 100%;
+    height: 65%;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.change-top-1:hover {
+    background-size: 120%;
+    transition: 0.8s;
+}
+.change-1 .change-bottom  {
+    background-color: rgb(34, 39, 33);
+    padding-top: 1px;
+    color: white;
+    height: 35%;
+    border-radius: 0px 0px 4px 4px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.change-bottom:hover  {
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+
+
+.change-2{
+    float: right;
+    margin-bottom: 30px;
+    background-color: rgb(34, 39, 33);
+    width: 46.7%;
+    height: 500px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+}
+.change-2 .change-top-2 {
+    background-image: url("../img/cavani.jpg");
+    background-size: 90%;
+    height: 65%;
+    border-radius: 4px 4px 0px 0px;
+}
+.change-2 .change-bottom  {
+    background-color: rgb(34, 39, 33);
+    padding-top: 1px;
+    color: white;
+    height: 35%;
+    border-radius: 0px 0px 4px 4px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.change-bottom:hover  {
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.change-top-2:hover {
+    background-size: 110%;
+    transition: 0.8s;
+}
+.change-3{
+    float: left;
+    margin-bottom: 30px;
+    background-color: rgb(34, 39, 33);
+    width: 30%;
+    height: 350px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+}
+.change-3 .change-top-3 {
+    background-image: url("../img/lewa.jpg");
+    background-size: 100%;
+    height: 60%;
+    border-radius: 4px 4px 0px 0px;
+}
+.change-bottom:hover  {
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+.change-top-3:hover {
+    background-size: 120%;
+    transition: 0.8s;
+}
+.change-3 .change-bottom  {
+    background-color: rgb(34, 39, 33);
+    padding-top: 1px;
+    color: white;
+    height: 40%;
+    border-radius: 0px 0px 4px 4px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.change-4{
+    float: left;
+    margin-bottom: 30px;
+    background-color: rgb(34, 39, 33);
+    width: 30%;
+    height: 350px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+    margin-left: 5%;
+}
+.change-4 .change-top-4 {
+    background-image: url("../img/clop.jpg");
+    background-size: 120%;
+    height: 60%;
+    border-radius: 4px 4px 0px 0px;
+}
+.change-bottom:hover  {
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+.change-top-4:hover {
+    background-size: 140%;
+    transition: 0.8s;
+}
+.change-4 .change-bottom  {
+    background-color: rgb(34, 39, 33);
+    padding-top: 1px;
+    color: white;
+    height: 40%;
+    border-radius: 0px 0px 4px 4px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.change-5{
+    float: right;
+    margin-bottom: 30px;
+    background-color: rgb(34, 39, 33);
+    width: 30%;
+    height: 350px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
+}
+.change-5 .change-top-5 {
+    background-image: url("../img/ribamar.jpg");
+    background-size: 100%;
+    height: 60%;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.change-top-5:hover {
+    background-size: 120%;
+    transition: 0.8s;
+}
+.change-5 .change-bottom  {
+    background-color: rgb(34, 39, 33);
+    padding-top: 1px;
+    color: white;
+    height: 40%;
+    border-radius: 0px 0px 4px 4px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.change-bottom:hover  {
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+ 
+ 
