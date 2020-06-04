@@ -3,13 +3,25 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #f4f4f4;
 }
-.esquerdo{
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.lado-esquerdo{
     float: left;
+    width: 46%;
 }
-.direito{
-    margin-right: 10px;
+.lado-direito{
+    float: right;
+    width: 46%;
+    margin-right: 1%;
 
 }
+
+
 .jogadores-fav{
     width: 50%;
     float: left;
@@ -90,9 +102,12 @@ body{
 .box::-webkit-scrollbar{
     background-color: #e9e7da;
     height: 10px;
+    border-radius: 6px;
+
 }
 .box::-webkit-scrollbar-track {
   background-color: #e9e7da;
+  border-radius: 6px;
 
 }
 
@@ -100,9 +115,6 @@ body{
     background-color: rgb(102, 223, 102);
     border-radius: 6px;
 }
-
-
-
 .box::-webkit-scrollbar-thumb:hover {
     background-color: rgb(45, 196, 45);
 }
@@ -128,17 +140,20 @@ body{
     overflow-y:scroll;
     border-radius: 6px 6px 6px 6px;
     box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.301);
-    width: 46%;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     margin-bottom: 20px;
-    
 }
+
 .box-jogador::-webkit-scrollbar{
     background-color: #e9e7da;
+    border-radius: 6px;
+
 }
 .box-jogador::-webkit-scrollbar-track {
   background-color: #e9e7da;
   width: 20px;
+  border-radius: 6px;
 
 }
 
@@ -198,7 +213,7 @@ body{
     width: 30px;
     height: 30px;
 }
-.box-jogador img:nth-child(1){
+.box-jogador .flags{
     margin-top: 20px;
     margin-left: 15px;
 }
@@ -360,13 +375,12 @@ body{
 }
 .cr7 .graficos:nth-child(3) .cartao-linha{
     margin-left: -30px;
-    margin-top: 15px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
  }
  .cr7 .graficos:nth-child(3) .cartao-linha span{
     margin-left: 40px;
-    margin-top: 20px;
     font-size: 18px;
  }
 .cr7 .graficos:nth-child(3){
@@ -455,13 +469,12 @@ body{
 }
 .messi .graficos:nth-child(3) .cartao-linha{
     margin-left: -30px;
-    margin-top: 15px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
  }
  .messi .graficos:nth-child(3) .cartao-linha span{
     margin-left: 40px;
-    margin-top: 20px;
     font-size: 18px;
  }
 .messi .graficos:nth-child(3){
@@ -554,13 +567,12 @@ body{
 }
 .ney .graficos:nth-child(3) .cartao-linha{
     margin-left: -30px;
-    margin-top: 15px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
  }
  .ney .graficos:nth-child(3) .cartao-linha span{
     margin-left: 40px;
-    margin-top: 20px;
     font-size: 18px;
  }
  .ney .graficos:nth-child(3){
@@ -652,13 +664,12 @@ body{
 }
 .lewa .graficos:nth-child(3) .cartao-linha{
     margin-left: -30px;
-    margin-top: 15px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
  }
  .lewa .graficos:nth-child(3) .cartao-linha span{
     margin-left: 40px;
-    margin-top: 20px;
     font-size: 18px;
  }
  .lewa .graficos:nth-child(3){
@@ -751,13 +762,12 @@ body{
 }
 .man .graficos:nth-child(3) .cartao-linha{
     margin-left: -30px;
-    margin-top: 15px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
  }
  .man .graficos:nth-child(3) .cartao-linha span{
     margin-left: 40px;
-    margin-top: 20px;
     font-size: 18px;
  }
  .man .graficos:nth-child(3){
@@ -816,29 +826,88 @@ body{
 
 
 /*times*/
+table .table-titles td{
+    color: rgb(138, 138, 138);
+    
+}
+table img{
+    width: 9px;
+}
+
+table td ul {
+    list-style-type: none;
+    display: flex;
+}
+table td li {
+    padding-right: 5px;
+    float: left;
+}
+.last-circle{
+    margin-right: 30px;
+    
+}
+table{
+    border-collapse: collapse; /* CSS2 */
+    background: rgb(255, 255, 255);
+}
+
+table td{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border: rgba(52, 255, 52, 0.185) 1px solid;
+}
+
+.liga .square{
+    width: 2%;
+    float: right;
+    margin-top: 23px;
+    margin-right: 0.5%;
+}
+.liga span{
+    float: right;
+    margin-top: 17px;
+    margin-right: 4%;
+}
+
+table tr:nth-child(2) td span{
+    color: rgb(16, 91, 189);
+}
+.direito .liga-time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.direito .posicao-time{
+    display: flex;
+    flex-direction: row;
+}
 .direito .title-temp{
     border-radius: 6px 6px 6px 6px;
     border: 0.7px solid rgb(0, 0, 0);
     box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.363);
     width: 94.5%;
-    height: 40px;
     margin-left: 2.5%;
+    overflow-x: scroll;
+    overflow-y: hidden;
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 .direito .title-temp span{
-    margin-left: 10.3%;
+    margin-left: 3%;
 }
 .direito .title-temp select{
     border: none;
 }
 .direito .title-temp img{
-    margin-left: 20%;
+    margin-left: 10%;
     width: 40px;
     height: 40px;
 }
-.direito .estadio{ 
+.direito .elenco{
+    overflow-x:hidden;
+    overflow-y:scroll;
     float: right;
     border-radius: 6px 6px 6px 6px;
     border: 0.7px solid rgb(0, 0, 0);
@@ -850,13 +919,96 @@ body{
     width: 46%;
     display: flex;
     flex-direction: column;
+}
+.direito .elenco span{
+    float: left;
+    margin-left: 20px;
+}
+.direito .elenco .title{
+   
+    font-weight: bold;
+    margin-top: 10px;
+}
+.direito .elenco .title-tit{
+    font-weight: bold;
+    color:rgb(126, 126, 126) ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.direito .estadio{ 
+    float: right;
+    border-radius: 6px 6px 6px 6px;
+    border: 0.7px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.363);
+    margin-right: 2.5%;
+    margin-top: 1.5%;
+    margin-bottom: 2.5%;
+    height: 240px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-#map, #pano {
-    float: left;
-    height: 100%;
-    width: 50%;
-  }
+.direito .estadio-title{ 
+    border-radius: 6px 6px 6px 6px;
+    border: 0.7px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px 3px rgba(155, 155, 155, 0.363);
+    width: 94.5%;
+    height: 40px;
+    margin-left: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.estadio-icon{ 
+    width: 30px;
+    margin-right: 10px;
+}
+.direito .estadio span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.direito .jogador-team span:nth-child(2){
+   font-size: 12px;
+
+}
+.elenco::-webkit-scrollbar{
+    background-color: #e9e7da;
+    width: 10px;
+    border-radius: 6px;
+}
+.elenco::-webkit-scrollbar-track {
+    background-color: #e9e7da;
+    border-radius: 6px;
+}
+
+.elenco::-webkit-scrollbar-thumb {
+    background-color: rgb(102, 223, 102);
+    border-radius: 6px;
+}
+.elenco::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(45, 196, 45);
+}
+
+.title-temp::-webkit-scrollbar{
+    background-color: #e9e7da;
+    height: 10px;
+    border-radius: 6px;
+}
+.title-temp::-webkit-scrollbar-track {
+    background-color: #e9e7da;
+    border-radius: 6px;
+}
+
+.title-temp::-webkit-scrollbar-thumb {
+    background-color: rgb(102, 223, 102);
+    border-radius: 6px;
+}
+.title-temp::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(45, 196, 45);
+}
 /*end times*/
 
 
