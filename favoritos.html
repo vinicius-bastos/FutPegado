@@ -61,295 +61,218 @@
                 <img src="img/jogador-cr7.png" alt="">
             </div>
             <span>C. Ronaldo</span>
-            <i onclick="desfavoritar(jog1)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(jog1);desfavoritar2(cris);" class="fas fa-star"></i>
         </div>
-        <div onclick="aparecer(mess)" id="jog2" class="jogador">
-            <div class="jog-imagem">
+        <div  id="jog2" class="jogador">
+            <div onclick="aparecer(mes)" class="jog-imagem">
                 <img src="img/jogador-messi.png" alt="">
             </div>
             <span>Lionel Messi</span>
-            <i onclick="desfavoritar(jog2)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(jog2);desfavoritar2(mes);" class="fas fa-star"></i>
         </div>
-        <div onclick="aparecer(ney)" id="jog3" class="jogador">
-            <div class="jog-imagem">
+        <div  id="jog3" class="jogador">
+            <div onclick="aparecer(ney)" class="jog-imagem">
                 <img src="img/jogador-neymar.png" alt="">
             </div>
             <span>Neymar Jr</span>
-            <i onclick="desfavoritar(jog3)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(jog3);desfavoritar2(ney);" class="fas fa-star"></i>
         </div>
-        <div onclick="aparecer(lew)" id="jog4" class="jogador">
-            <div class="jog-imagem">
+        <div id="jog4" class="jogador">
+            <div onclick="aparecer(lew)" class="jog-imagem">
                 <img src="img/jogador-lewa.png" alt="">
             </div>
             <span>Lewandowski</span>
-            <i onclick="desfavoritar(jog4)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(jog4);desfavoritar2(lew);" class="fas fa-star"></i>
         </div>
-        <div onclick="aparecer(man)" id="jog5" class="jogador">
-            <div class="jog-imagem">
+        <div id="jog5" class="jogador">
+            <div onclick="aparecer(man)" class="jog-imagem">
                 <img src="img/jogador-manoel.png" alt="">
             </div>
             <span>Manoel</span>
-            <i onclick="desfavoritar(jog5)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(jog5);desfavoritar2(man);" class="fas fa-star"></i>
         </div>
     </div>
 
     <div class="box">
-        <div id="time1" class="jogador">
-            <div class="jog-imagem" >
+        <div  id="time1" class="jogador">
+            <div onclick="aparecer(cor)" class="jog-imagem" >
                 <img src="img/team-cor.png" alt="">
             </div>
             <span>Corinthians FC</span>
-            <i onclick="desfavoritar(time1)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(time1);desfavoritar2(cor);" class="fas fa-star"></i>
         </div>
         <div id="time2" class="jogador">
-            <div class="jog-imagem">
+            <div onclick="aparecer(bar)" class="jog-imagem">
                 <img src="img/barcelona.png" alt="">
             </div>
             <span>Barcelona CF</span>
-            <i onclick="desfavoritar(time2)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(time2);desfavoritar2(bar);" class="fas fa-star"></i>
         </div>
         <div id="time3" class="jogador">
-            <div class="jog-imagem">
+            <div onclick="aparecer(bor)" class="jog-imagem">
                 <img src="img/flag-borussia.png" alt="">
             </div>
-            <span>Borussia Dortmund</span>
-            <i onclick="desfavoritar(time3)" class="fas fa-star"></i>
+            <span>B. Dortmund</span>
+            <i onclick="desfavoritar1(time3);desfavoritar2(bor);" class="fas fa-star"></i>
         </div>
         <div id="time4" class="jogador">
-            <div class="jog-imagem">
+            <div onclick="aparecer(rea)" class="jog-imagem">
                 <img src="img/real-madrid.png" alt="">
             </div>
             <span>FC Real Madrid</span>
-            <i onclick="desfavoritar(time4)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(time4);desfavoritar2(rea);" class="fas fa-star"></i>
         </div>
         <div id="time5" class="jogador">
-            <div class="jog-imagem">
+            <div onclick="aparecer(cit)" class="jog-imagem">
                 <img src="img/city.png" alt="">
             </div>
             <span>M. City FC</span>
-            <i onclick="desfavoritar(time5)" class="fas fa-star"></i>
+            <i onclick="desfavoritar1(time5);desfavoritar2(cit);" class="fas fa-star"></i>
         </div>
     </div>
 </div>
 
- <!--CR7-->
+
+  
 <div class="container">
-    <div style="display: block;" id="cris" class="box-jogador cr7 esquerdo">
-        <div style="background-image: url('img/wallpaper-cr7.jpg');" class="wallpaper">
-                <div class="imagem-circle">
+        <!--Times-->
+        <div class="lado-esquerdo">
+            <!--CR7-->
+            <div style="display: block;" id="cris" class="box-jogador cr7 esquerdo">
+                <div style="background-image: url('img/wallpaper-cr7.jpg');" class="wallpaper">
+                        <div class="imagem-circle">
+                        </div>
+                        <span>Cristiano Ronaldo</span>
                 </div>
-                <span>Cristiano Ronaldo</span>
-        </div>
-        <div class="country-team">
-            <div class="jogador-country">
-                <img src="img/flag-portugal.png" alt="">
-                <span>Portugal</span>
-            </div>
-            <div class="jogador-team">
-                <img src="img/flag-juve.png" alt="">
-                <span>Juventus</span>
-            </div>
-        </div>
-        <div class="info">
-            <div class="posicao">
-                <span>Posição</span>
-                <span>Atacante</span>
-            </div>
-            <div class="idade">
-                <span>Idade</span>
-                <span>35 anos</span>
-            </div>
-            <div class="altura">
-                <span>Altura</span>
-                <span>1,87cm</span>
-            </div>
-            <div class="peso">
-                <span>Peso</span>
-                <span>83</span>
-            </div>
-            <div class="camisa"><span>7</span></div>
-        </div>
-        <div class="title-temp">
-            <span>Temporada 2019/2020</span>
-            <img src="img/serie-A.png" alt="">
-            <select name="" id="">
-                <option value="">Serie A</option>
-                <option value="">Champions League</option>
-            </select>
-        </div>
-        <div class="estatisticas">
-            <div class="graficos">
-                <span>Partidas Disputadas</span>
-                <div class="chart" id="donutchartCr7" style="width: 99%;"></div>   
-            </div>
-            <div class="graficos">
-                <span>Gols e Assistências</span>
-                <div class="chart" id="chart_divCr7" style="width: 99%;"></div>
-            </div>
-            <div class="graficos">
-                <span>Cartões</span>
-                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
-                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
-            </div>
-            <div class="graficos">
-                <span>Precisão</span>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
-            </div>
-        </div>
-    </div>
-
-        <!--end CR7-->
-
-
-        <!--Corinthians-->
-
-    <div style="float: right;" id="man" style="display: block;" class="box-jogador cor direito">
-        <div style="background-image: url('img/wallpaper-cor.jpg');" class="wallpaper">
-                <div class="imagem-circle">
+                <div class="country-team">
+                    <div class="jogador-country">
+                        <img class="flags" src="img/flag-portugal.png" alt="">
+                        <span>Portugal</span>
+                    </div>
+                    <div class="jogador-team">
+                        <img class="flags" src="img/flag-juve.png" alt="">
+                        <span>Juventus</span>
+                    </div>
                 </div>
-                <span>Corinthians</span>
-        </div>
-        <div class="country-team">
-            <div class="jogador-country">
-                <img src="img/flag-brazil.png" alt="">
-                <span>Brasil</span>
-            </div>
-        </div>
-        <div class="estadio">
-        </div>
-        <div class="title-temp">
-            <span>Temporada 2019/2020</span>
-            <img src="img/serie-A.png" alt="">
-            <select name="" id="">
-                <option value="">Serie A</option>
-                <option value="">Champions League</option>
-            </select>
-        </div>
-        
-    </div>
-
-
- <!--end Corinthians-->
-
-    <!--Messi-->
-
-    <div id="mess" style="display: block;" class="box-jogador messi esquerdo">
-        <div style="background-image: url('img/wallpaper-messi.jpg');" class="wallpaper">
-                <div class="imagem-circle">
+                <div class="info">
+                    <div class="posicao">
+                        <span>Posição</span>
+                        <span>Atacante</span>
+                    </div>
+                    <div class="idade">
+                        <span>Idade</span>
+                        <span>35 anos</span>
+                    </div>
+                    <div class="altura">
+                        <span>Altura</span>
+                        <span>1,87cm</span>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <span>83</span>
+                    </div>
+                    <div class="camisa"><span>7</span></div>
                 </div>
-                <span>Lionel Messi</span>
-        </div>
-        <div class="country-team">
-            <div class="jogador-country">
-                <img src="img/flag-argentina.png" alt="">
-                <span>Argentina</span>
+                <div class="title-temp">
+                    <span>Temporada 2019/2020</span>
+                    <img src="img/serie-A.png" alt="">
+                    <select name="" id="">
+                        <option value="">Serie A</option>
+                        <option value="">Champions League</option>
+                    </select>
+                </div>
+                <div class="estatisticas">
+                    <div class="graficos">
+                        <span>Partidas Disputadas</span>
+                        <div class="chart" id="donutchartCr7" style="width: 99%;"></div>   
+                    </div>
+                    <div class="graficos">
+                        <span>Gols e Assistências</span>
+                        <div class="chart" id="chart_divCr7" style="width: 99%;"></div>
+                    </div>
+                    <div class="graficos">
+                        <span>Cartões</span>
+                        <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
+                        <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+                    </div>
+                    <div class="graficos">
+                        <span>Precisão</span>
+                        <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>72%</b>
+                        <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nos Passes: </div><b>60%</b>
+                    </div>
+                </div>
             </div>
-            <div class="jogador-team">
-                <img src="icon/barcelona.png" alt="">
-                <span>Barcelona</span>
-            </div>
-        </div>
-        <div class="info">
-            <div class="posicao">
-                <span>Posição</span>
-                <span>Atacante</span>
-            </div>
-            <div class="idade">
-                <span>Idade</span>
-                <span>32 anos</span>
-            </div>
-            <div class="altura">
-                <span>Altura</span>
-                <span>1,70cm</span>
-            </div>
-            <div class="peso">
-                <span>Peso</span>
-                <span>72</span>
-            </div>
-            <div class="camisa"><span>10</span></div>
-        </div>
-        <div class="title-temp">
-            <span>Temporada 2019/2020</span>
-            <img src="img/serie-A.png" alt="">
-            <select name="" id="">
-                <option value="">Serie A</option>
-                <option value="">Champions League</option>
-            </select>
-        </div>
-        <div class="estatisticas">
-            <div class="graficos">
-                <span>Partidas Disputadas</span>
-                <div class="chart" id="donutchartMessi" style="width: 99%;"></div>   
-            </div>
-            <div class="graficos">
-                <span>Gols e Assistências</span>
-                <div class="chart" id="chart_divMessi" style="width: 99%;"></div>
-            </div>
-            <div class="graficos">
-                <span>Cartões</span>
-                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
-                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
-            </div>
-            <div class="graficos">
-                <span>Precisão</span>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
-            </div>
-        </div>
-    </div>
-
- <!--end Messi-->
-
-<!--Barcelona-->
-
-<div style="float: right;" id="man" style="display: block;" class="box-jogador bar direito">
-    <div style="background-image: url('img/wallpaper-barcelona.jpg');" class="wallpaper">
-            <div class="imagem-circle">
-            </div>
-            <span>Barcelona</span>
-    </div>
-    <div class="country-team">
-        <div class="jogador-country">
-            <img src="img/flag-brazil.png" alt="">
-            <span>Brasil</span>
-        </div>
-    </div>
-    <div class="info">
-        <div class="posicao">
-            <span>Posição</span>
-            <span>Zagueiro</span>
-        </div>
-        <div class="idade">
-            <span>Idade</span>
-            <span>30 anos</span>
-        </div>
-        <div class="altura">
-            <span>Altura</span>
-            <span>1,81cm</span>
-        </div>
-        <div class="peso">
-            <span>Peso</span>
-            <span>82</span>
-        </div>
-    </div>
-    <div class="title-temp">
-        <span>Temporada 2019/2020</span>
-        <img src="img/serie-A.png" alt="">
-        <select name="" id="">
-            <option value="">Serie A</option>
-            <option value="">Champions League</option>
-        </select>
-    </div>
+            <!--end CR7-->
     
-</div>
-
-
-<!--end Barcelona-->
-
- <!--Neymar-->
-
-    <div id="ney" style="display: block;" class="box-jogador ney esquerdo">
+            <!--Messi-->
+        <div id="mes" style="display: none;" class="box-jogador messi esquerdo">
+            <div style="background-image: url('img/wallpaper-messi.jpg');" class="wallpaper">
+                    <div class="imagem-circle">
+                    </div>
+                    <span>Lionel Messi</span>
+            </div>
+            <div class="country-team">
+                <div class="jogador-country">
+                    <img class="flags" src="img/flag-argentina.png" alt="">
+                    <span>Argentina</span>
+                </div>
+                <div class="jogador-team">
+                    <img class="flags" src="icon/barcelona.png" alt="">
+                    <span>Barcelona</span>
+                </div>
+            </div>
+            <div class="info">
+                <div class="posicao">
+                    <span>Posição</span>
+                    <span>Atacante</span>
+                </div>
+                <div class="idade">
+                    <span>Idade</span>
+                    <span>32 anos</span>
+                </div>
+                <div class="altura">
+                    <span>Altura</span>
+                    <span>1,70cm</span>
+                </div>
+                <div class="peso">
+                    <span>Peso</span>
+                    <span>72</span>
+                </div>
+                <div class="camisa"><span>10</span></div>
+            </div>
+            <div class="title-temp">
+                <span>Temporada 2019/2020</span>
+                <img src="img/serie-A.png" alt="">
+                <select name="" id="">
+                    <option value="">Serie A</option>
+                    <option value="">Champions League</option>
+                </select>
+            </div>
+            <div class="estatisticas">
+                <div class="graficos">
+                    <span>Partidas Disputadas</span>
+                    <div class="chart" id="donutchartMessi" style="width: 99%;"></div>   
+                </div>
+                <div class="graficos">
+                    <span>Gols e Assistências</span>
+                    <div class="chart" id="chart_divMessi" style="width: 99%;"></div>
+                </div>
+                <div class="graficos">
+                    <span>Cartões</span>
+                    <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 1</span></div>
+                    <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 2</span></div>
+                </div>
+                <div class="graficos">
+                    <span>Precisão</span>
+                    <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>78%</b>
+                        <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nos Passes: </div><b>77%</b>
+                </div>
+            </div>
+        </div>
+     <!--end Messi-->
+    
+     <!--Neymar-->
+     <div id="ney" style="display: none;" class="box-jogador ney esquerdo">
         <div style="background-image: url('img/wallpaper-neymar.jpg');" class="wallpaper">
                 <div class="imagem-circle">
                 </div>
@@ -357,10 +280,10 @@
         </div>
         <div class="country-team">
             <div class="jogador-country">
-                <img src="img/flag-brazil.png" alt="">
+                <img class="flags" src="img/flag-brazil.png" alt="">
                 <span>Brasil</span>
             </div>
-            <div class="jogador-team">
+            <div class="flags" class="jogador-team">
                 <img src="img/flag-psg.png" alt="">
                 <span>PSG</span>
             </div>
@@ -372,15 +295,15 @@
             </div>
             <div class="idade">
                 <span>Idade</span>
-                <span>32 anos</span>
+                <span>28 anos</span>
             </div>
             <div class="altura">
                 <span>Altura</span>
-                <span>1,70cm</span>
+                <span>1,75cm</span>
             </div>
             <div class="peso">
                 <span>Peso</span>
-                <span>72</span>
+                <span>68</span>
             </div>
             <div class="camisa"><span>11</span></div>
         </div>
@@ -403,69 +326,21 @@
             </div>
             <div class="graficos">
                 <span>Cartões</span>
-                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
-                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 5</span></div>
+                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 2</span></div>
             </div>
             <div class="graficos">
                 <span>Precisão</span>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>70%</b>
+                        <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nos Passes: </div><b>80%</b>
             </div>
         </div>
     </div>
-
-
- <!--end Neymar-->
- 
- <!--Borussia-->
-
- <div style="float: right;" id="man" style="display: block;" class="box-jogador bor direito">
-    <div style="background-image: url('img/wallpaper-borussia.jpg');" class="wallpaper">
-            <div class="imagem-circle">
-            </div>
-            <span>Borussia Dortmund</span>
-    </div>
-    <div class="country-team">
-        <div class="jogador-country">
-            <img src="img/flag-brazil.png" alt="">
-            <span>Brasil</span>
-        </div>
-    </div>
-    <div class="info">
-        <div class="posicao">
-            <span>Posição</span>
-            <span>Zagueiro</span>
-        </div>
-        <div class="idade">
-            <span>Idade</span>
-            <span>30 anos</span>
-        </div>
-        <div class="altura">
-            <span>Altura</span>
-            <span>1,81cm</span>
-        </div>
-        <div class="peso">
-            <span>Peso</span>
-            <span>82</span>
-        </div>
-    </div>
-    <div class="title-temp">
-        <span>Temporada 2019/2020</span>
-        <img src="img/serie-A.png" alt="">
-        <select name="" id="">
-            <option value="">Serie A</option>
-            <option value="">Champions League</option>
-        </select>
-    </div>
+    <!--end Neymar-->
+     
     
-</div>
-
-
-<!--end Borussia-->
-
-   <!--Lewa-->
-
-    <div id="lew" style="display: block;" class="box-jogador lewa esquerdo">
+     <!--Lewa-->
+     <div id="lew" style="display: none;" class="box-jogador lewa esquerdo">
         <div style="background-image: url('img/wallpaper-lewa.jpg');" class="wallpaper">
                 <div class="imagem-circle">
                 </div>
@@ -473,11 +348,11 @@
         </div>
         <div class="country-team">
             <div class="jogador-country">
-                <img src="img/flag-polonia.png" alt="">
+                <img class="flags" src="img/flag-polonia.png" alt="">
                 <span>Polônia</span>
             </div>
             <div class="jogador-team">
-                <img src="img/flag-bayern.png" alt="">
+                <img class="flags" src="img/flag-bayern.png" alt="">
                 <span>Bayern München</span>
             </div>
         </div>
@@ -488,15 +363,15 @@
             </div>
             <div class="idade">
                 <span>Idade</span>
-                <span>32 anos</span>
+                <span>31 anos</span>
             </div>
             <div class="altura">
                 <span>Altura</span>
-                <span>1,70cm</span>
+                <span>1,84cm</span>
             </div>
             <div class="peso">
                 <span>Peso</span>
-                <span>72</span>
+                <span>80</span>
             </div>
             <div class="camisa"><span>9</span></div>
         </div>
@@ -519,68 +394,21 @@
             </div>
             <div class="graficos">
                 <span>Cartões</span>
-                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
-                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 2</span></div>
+                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 2</span></div>
             </div>
             <div class="graficos">
                 <span>Precisão</span>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>81%</b>
+                        <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nos Passes: </div><b>60%</b>
             </div>
         </div>
-    </div>
-
- <!--end Lewa-->
- 
-<!--Real Madrid-->
-
-<div style="float: right;" id="man" style="display: block;" class="box-jogador real direito">
-    <div style="background-image: url('img/wallpaper-real.jpg');" class="wallpaper">
-            <div class="imagem-circle">
-            </div>
-            <span>Real Madrid</span>
-    </div>
-    <div class="country-team">
-        <div class="jogador-country">
-            <img src="img/flag-brazil.png" alt="">
-            <span>Brasil</span>
-        </div>
-    </div>
-    <div class="info">
-        <div class="posicao">
-            <span>Posição</span>
-            <span>Zagueiro</span>
-        </div>
-        <div class="idade">
-            <span>Idade</span>
-            <span>30 anos</span>
-        </div>
-        <div class="altura">
-            <span>Altura</span>
-            <span>1,81cm</span>
-        </div>
-        <div class="peso">
-            <span>Peso</span>
-            <span>82</span>
-        </div>
-    </div>
-    <div class="title-temp">
-        <span>Temporada 2019/2020</span>
-        <img src="img/serie-A.png" alt="">
-        <select name="" id="">
-            <option value="">Serie A</option>
-            <option value="">Champions League</option>
-        </select>
     </div>
     
-</div>
-
-
-<!--end Real Madrid-->
-
-<!--Manoel-->
-
-    <div id="man" style="display: block;" class="box-jogador man esquerdo">
+    <!--end Lewa-->
+    
+    <!--Manoel-->
+    <div id="man" style="display: none;" class="box-jogador man esquerdo">
         <div style="background-image: url('img/wallpaper-manoel.jpg');" class="wallpaper">
                 <div class="imagem-circle">
                 </div>
@@ -588,11 +416,11 @@
         </div>
         <div class="country-team">
             <div class="jogador-country">
-                <img src="img/flag-brazil.png" alt="">
+                <img class="flags" src="img/flag-brazil.png" alt="">
                 <span>Brasil</span>
             </div>
             <div class="jogador-team">
-                <img src="img/team-cor.png" alt="">
+                <img class="flags" src="img/team-cor.png" alt="">
                 <span>Corinthians FC</span>
             </div>
         </div>
@@ -634,72 +462,489 @@
             </div>
             <div class="graficos">
                 <span>Cartões</span>
-                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 3</span></div>
-                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 1</span></div>
+                <div class="cartao-linha"><img src="icon/yellow-card.png" alt=""><span> 9</span></div>
+                <div class="cartao-linha"><img src="icon/red-card.png" alt=""><span> 6</span></div>
             </div>
             <div class="graficos">
                 <span>Precisão</span>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>57%</b>
-                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>84%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha">Precisão nas Finalizações: </div><b>0%</b>
+                <div style="color: rgb(126, 126, 126);" class="precisao-linha linha2">Precisão nas Finalizações: </div><b>0%</b>
             </div>
         </div>
     </div>
-
+    
     <!--end Manoel-->
+        </div>
+    
+    <!--End Jogadores-->
+    
+    
+    
+       <!--Times-->
+        
+           <div class="lado-direito">
+               <!--Corinthians-->
+            <div style="float: right;display: block;" id="cor" class="box-jogador cor direito">
+                <div style="background-image: url('img/wallpaper-cor.jpg');" class="wallpaper">
+                        <div class="imagem-circle">
+                        </div>
+                        <span>Corinthians</span>
+                </div>
+                <div class="country-team">
+                    <div class="jogador-country">
+                        <img class="flags" src="img/flag-brazil.png" alt="">
+                        <span>Brasil</span>
+                    </div>
+                    <div class="jogador-team">
+                        <span>Fundação: </span>
+                        <span>1 de setembro de 1910</span>
+                    </div>
+                </div>
+                <div class="elenco">
+                    <span class="title">Elenco</span>
+                    <span class="title-tit">Titulares</span>
+                    <span>Cássio</span>
+                    <span>Gil</span>
+                    <span>Manoel</span>
+                    <span>Cássio</span>
+                    <span>Fagner</span>
+                    <span>Danilo Avelar</span>
+                    <span>Ramiro</span>
+                    <span>Gabriel</span>
+                    <span>Mateus Vital</span>
+                    <span>Vagner Love</span>
+                    <span>Mauro Boseli</span>
+                </div>
+                <div class="estadio-title">
+                    <img class="estadio-icon" src="img/stadium.png" alt=""><span>Itaquerão</span>
+                </div>
+                <div class="estadio">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1591130923634!6m8!1m7!1s6c9SauyJB0ZGsIOkaCY7vQ!2m2
+                    !1d-23.54530951563504!2d-46.47470527214739!3f85.39870305095455!4f4.165533036210206!5f0.7820865974627469" width="100%" height="100%" frameborder="0" 
+                style="border:0; border-radius: 6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+                </div>
+                <div class="title-temp">
+                    <div class="liga-time">
+                        <span>Temporada 2019/2020</span>
+                    <img src="img/brasileirao.png" alt="">
+                    <select name="" id="">
+                        <option value="">Brasileirão</option>
+                        <option value="">Champions League</option>
+                    </select>
+                    </div>
+                    <div class="posicao-time">
+                        <table >
+                            <tr class="table-titles">
+                                <td class="classi">Classificação</td>
+                                <td>P</td>
+                                <td>J</td>
+                                <td>V</td>
+                                <td>E</td>
+                                <td>D</td>
+                                <td>G/F</td>
+                                <td>G/C</td>
+                                <td>S/G</td>
+                                <td>%</td>
+                                <td>ÚLT. JOGOS </td>
+                            </tr>
+                            <tr>
+                                <td><span><b>1</b></span> Corinthians</td>
+                                <td><b>82</b></td>
+                                <td>29</td>
+                                <td>27</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>66</td>
+                                <td>21</td>
+                                <td>45</td>
+                                <td>94.3</td>
+                                <td><ul><li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                    <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                    <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                    <li><img style="width: 9px;height: 9px;" src="icon/lose.png" alt=""></li>
+                                    <li><img style="width: 9px;height: 9px;" class="last-circle" src="icon/win.png" alt=""></li>
+                                </ul></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+                <!--end Corinthians-->
 
-    <!--City-->
-
-    <div style="float: right;" id="man" style="display: block;" class="box-jogador city direito">
-        <div style="background-image: url('img/wallpaper-city.jpg');" class="wallpaper">
+                  <!--Barcelona-->
+       <div style="float: right;display: none;" id="bar" class="box-jogador bar direito">
+        <div style="background-image: url('img/wallpaper-barcelona.jpg');" class="wallpaper">
                 <div class="imagem-circle">
                 </div>
-                <span>M. City</span>
+                <span>Barcelona</span>
         </div>
         <div class="country-team">
             <div class="jogador-country">
-                <img src="img/flag-brazil.png" alt="">
-                <span>Brasil</span>
+                <img class="flags" src="img/flag-espanha.png" alt="">
+                <span>Espanha</span>
+            </div>
+            <div class="jogador-team">
+                <span>Fundação: </span>
+                <span>29 de novembro de 1899</span>
             </div>
         </div>
-        <div class="info">
-            <div class="posicao">
-                <span>Posição</span>
-                <span>Zagueiro</span>
-            </div>
-            <div class="idade">
-                <span>Idade</span>
-                <span>30 anos</span>
-            </div>
-            <div class="altura">
-                <span>Altura</span>
-                <span>1,81cm</span>
-            </div>
-            <div class="peso">
-                <span>Peso</span>
-                <span>82</span>
-            </div>
+        <div class="elenco">
+            <span class="title">Elenco</span>
+            <span class="title-tit">Titulares</span>
+            <span>Ter Stegen</span>
+            <span>Umtiti</span>
+            <span>Gerard Piqué</span>
+            <span>Jordi Alba</span>
+            <span>Sergi Roberto</span>
+            <span>Arturo Vidal</span>
+            <span>Sergio Busquets</span>
+            <span>Ivan Rakctic</span>
+            <span>Lionel Messi</span>
+            <span>Antoine Griezmann</span>
+            <span>Luis Suárez</span>
+        </div>
+        <div class="estadio-title">
+            <img class="estadio-icon" src="img/stadium.png" alt=""><span>Camp Nou</span>
+        </div>
+        <div class="estadio">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1591129521920!6m8!1m7!1sC3i0uDU0S5890ZF-AC
+            4qUw!2m2!1d41.38103069529599!2d2.123197355929233!3f244.31536096507037!4f3.4936061611276727!5f0.78
+            20865974627469" width="100%" height="100%" frameborder="0" style="border:0;border-radius: 6px;" allowf
+            ullscreen="" aria-hidden="false" tabindex="0"></iframe> 
         </div>
         <div class="title-temp">
-            <span>Temporada 2019/2020</span>
-            <img src="img/serie-A.png" alt="">
+            <div class="liga-time">
+                <span>Temporada 2019/2020</span>
+            <img src="img/laliga.png" alt="">
             <select name="" id="">
-                <option value="">Serie A</option>
+                <option value="">LaLiga</option>
                 <option value="">Champions League</option>
             </select>
+            </div>
+            <div class="posicao-time">
+                <table >
+                    <tr class="table-titles">
+                        <td class="classi">Classificação</td>
+                        <td>P</td>
+                        <td>J</td>
+                        <td>V</td>
+                        <td>E</td>
+                        <td>D</td>
+                        <td>G/F</td>
+                        <td>G/C</td>
+                        <td>S/G</td>
+                        <td>%</td>
+                        <td>ÚLT. JOGOS </td>
+                    </tr>
+                    <tr>
+                        <td><span><b>1</b></span> Barcelona</td>
+                        <td><b>82</b></td>
+                        <td>29</td>
+                        <td>27</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>66</td>
+                        <td>21</td>
+                        <td>45</td>
+                        <td>94.3</td>
+                        <td><ul><li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                            <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                            <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                            <li><img style="width: 9px;height: 9px;" src="icon/lose.png" alt=""></li>
+                            <li><img style="width: 9px;height: 9px;" class="last-circle" src="icon/win.png" alt=""></li>
+                        </ul></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--end Barcelona-->
+    
+                <!--Borussia-->
+        
+         <div style="float: right;display: none;" id="bor" class="box-jogador bor direito">
+            <div style="background-image: url('img/wallpaper-borussia.jpg');" class="wallpaper">
+                    <div class="imagem-circle">
+                    </div>
+                    <span>Borussia Dortmund</span>
+            </div>
+            <div class="country-team">
+                <div class="jogador-country">
+                    <img class="flags" src="img/flag-alemanha.png" alt="">
+                    <span>Alemanha</span>
+                </div>
+                <div class="jogador-team">
+                    <span>Fundação: </span>
+                    <span>19 de dezembro de 1909</span>
+                </div>
+            </div>
+            <div class="elenco">
+                <span class="title">Elenco</span>
+                <span class="title-tit">Titulares</span>
+                <span>Romam Burki</span>
+                <span>Mats Hummels</span>
+                <span>Leonardo Balerdi</span>
+                <span>Lukasz Piszczek</span>
+                <span>Raphael Guerreiro</span>
+                <span>Mario Gotze</span>
+                <span>Emre Can</span>
+                <span>Jadon Sancho</span>
+                <span>Marco Reus</span>
+                <span>Thorgan Hazard</span>
+                <span>Erling Haland</span>
+            </div>
+            
+            <div class="estadio-title">
+                <img class="estadio-icon" src="img/stadium.png" alt=""><span>Signal Iduna Park</span>
+            </div>
+            <div class="estadio">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1591121575707!6m8!1m7!1sCAoSLEFGMVFpcE42MU
+                RUblF0RHd3YmdseDQ0Y21VaWdzSXBTc2Q1d1VhMzRMUlkx!2m2!1d51.4924596!2d7.451302099999999!3f282.193670
+                1433058!4f-6.997796102773975!5f0.7820865974627469" width="100%" height="100%" frameborder="0" 
+                style="border:0; border-radius: 6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
+            </div>
+            
+            <div class="title-temp">
+                <div class="liga-time">
+                    <span>Temporada 2019/2020</span>
+                <img src="img/bundesliga.png" alt="">
+                <select name="" id="">
+                    <option value="">Bundesliga</option>
+                    <option value="">Champions League</option>
+                </select>
+                </div>
+                <div class="posicao-time">
+                    <table >
+                        <tr class="table-titles">
+                            <td class="classi">Classificação</td>
+                            <td>P</td>
+                            <td>J</td>
+                            <td>V</td>
+                            <td>E</td>
+                            <td>D</td>
+                            <td>G/F</td>
+                            <td>G/C</td>
+                            <td>S/G</td>
+                            <td>%</td>
+                            <td>ÚLT. JOGOS </td>
+                        </tr>
+                        <tr>
+                            <td><span><b>3</b></span> Borussia</td>
+                            <td><b>82</b></td>
+                            <td>29</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>66</td>
+                            <td>21</td>
+                            <td>45</td>
+                            <td>94.3</td>
+                            <td><ul><li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/lose.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" class="last-circle" src="icon/win.png" alt=""></li>
+                            </ul></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
         
+        
+        <!--end Borussia-->
+    
+         <!--Real Madrid-->
+         <div style="float: right;display: none;" id="rea"  class="box-jogador real direito">
+            <div style="background-image: url('img/wallpaper-real.jpg');" class="wallpaper">
+                    <div class="imagem-circle">
+                    </div>
+                    <span>Real Madrid</span>
+            </div>
+            <div class="country-team">
+                <div class="jogador-country">
+                    <img class="flags" src="img/flag-espanha.png" alt="">
+                    <span>Espanha</span>
+                </div>
+                <div class="jogador-team">
+                    <span>Fundação: </span>
+                    <span>6 de março de 1902</span>
+                </div>
+            </div>
+            <div class="elenco">
+                <span class="title">Elenco</span>
+                <span class="title-tit">Titulares</span>
+                <span>Thibaut Courtois</span>
+                <span>Sergio Ramos</span>
+                <span>Eder Militão</span>
+                <span>Dani Carvajal</span>
+                <span>Marcelo</span>
+                <span>Casemiro</span>
+                <span>Luka Modric</span>
+                <span>Toni Kroos</span>
+                <span>Vinicius Jr</span>
+                <span>Eden Hazard</span>
+                <span>Karim Benzema</span>
+            </div>
+            <div class="estadio-title">
+                <img class="estadio-icon" src="img/stadium.png" alt=""><span>Santiago Bernabeu</span>
+            </div>
+            <div class="estadio">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1591127897228!6m8!1m7!1sCAoSLEFGMVFpcFBNRzRrRmlrYzJh
+                dmRQNVpua0Nhbmh2U3NvVDNlMlJZV1dUdk9w!2m2!1d40.4529738!2d-3.6879448!3f244.96170936066255!4f16.036321785041764!5f0.7820865974627469" width="100%" height="100%" frameborder="0" 
+                style="border:0; border-radius: 6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
+            </div>
+            <div class="title-temp">
+                <div class="liga-time">
+                    <span>Temporada 2019/2020</span>
+                    <img src="img/laliga.png" alt="">
+                    <select name="" id="">
+                        <option value="">LaLiga</option>
+                        <option value="">Champions League</option>
+                    </select>
+                </div>
+                <div class="posicao-time">
+                    <table >
+                        <tr class="table-titles">
+                            <td class="classi">Classificação</td>
+                            <td>P</td>
+                            <td>J</td>
+                            <td>V</td>
+                            <td>E</td>
+                            <td>D</td>
+                            <td>G/F</td>
+                            <td>G/C</td>
+                            <td>S/G</td>
+                            <td>%</td>
+                            <td>ÚLT. JOGOS </td>
+                        </tr>
+                        <tr>
+                            <td><span><b>2</b></span> Real Madrid</td>
+                            <td><b>82</b></td>
+                            <td>29</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>66</td>
+                            <td>21</td>
+                            <td>45</td>
+                            <td>94.3</td>
+                            <td><ul><li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/lose.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" class="last-circle" src="icon/win.png" alt=""></li>
+                            </ul></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <!--end Real Madrid-->
+        
+          <!--City-->
+          <div style="float: right; display: none;" id="cit"  class="box-jogador city direito">
+            <div style="background-image: url('img/wallpaper-city.jpg');" class="wallpaper">
+                    <div class="imagem-circle">
+                    </div>
+                    <span>M. City</span>
+            </div>
+            <div class="country-team">
+                <div class="jogador-country">
+                    <img  class="flags"src="img/flag-inglaterra.png" alt="">
+                    <span>Inglaterra</span>
+                </div>
+                <div class="jogador-team">
+                    <span>Fundação: </span>
+                    <span>16 de abril de 1894</span>
+                </div>
+            </div>
+            <div class="elenco">
+                <span class="title">Elenco</span>
+                <span class="title-tit">Titulares</span>
+                <span>Éderson</span>
+                <span>Nicolás Otamendi</span>
+                <span>Aymeric Laporte</span>
+                <span>Benjamin Mendy</span>
+                <span>Kyle Walker</span>
+                <span>Casemiro</span>
+                <span>Kevin De Bruyne</span>
+                <span>Bernardo Silva</span>
+                <span>David Silva</span>
+                <span>Sergio Aguero</span>
+                <span>Gabriel Jesus</span>
+            </div>
+            <div class="estadio-title">
+                <img class="estadio-icon" src="img/stadium.png" alt=""><span>Etihad Stadium</span>
+            </div>
+            <div class="estadio">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1591128272324!6m8!1m7!1sCAoSLEFGMVFpcE9D
+                aFNuQXBaU3I1NTk2R2M0dWtQbkZvQW1SUV9NclgtaFpCQUNQ!2m2!1d53.4830274!2d-2.2009437!3f254.51572451706795!4f9.07262377921753
+                7!5f0.7820865974627469" width="100%" height="100%" frameborder="0" 
+                style="border:0; border-radius: 6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>  
+                
+            </div>
+            <div class="title-temp">
+                <div class="liga-time">
+                    <span>Temporada 2019/2020</span>
+                    <img style="width: 30px;height: 30px;" src="img/premier-league.png" alt="">
+                <select name="" id="">
+                    <option value="">Premier League</option>
+                    <option value="">Champions League</option>
+                </select>
+                </div>
+                <div class="posicao-time">
+                    <table >
+                        <tr class="table-titles">
+                            <td class="classi">Classificação</td>
+                            <td>P</td>
+                            <td>J</td>
+                            <td>V</td>
+                            <td>E</td>
+                            <td>D</td>
+                            <td>G/F</td>
+                            <td>G/C</td>
+                            <td>S/G</td>
+                            <td>%</td>
+                            <td>ÚLT. JOGOS </td>
+                        </tr>
+                        <tr>
+                            <td><span><b>4</b></span> M. City</td>
+                            <td><b>82</b></td>
+                            <td>29</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>66</td>
+                            <td>21</td>
+                            <td>45</td>
+                            <td>94.3</td>
+                            <td><ul><li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/win.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" src="icon/lose.png" alt=""></li>
+                                <li><img style="width: 9px;height: 9px;" class="last-circle" src="icon/win.png" alt=""></li>
+                            </ul></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+     <!--end City-->
+    
+    
     </div>
-
-
- <!--end City-->
 </div>
- 
+   
+    
+
+   
+    
 
 
-
- 
-
-<!--footer-->
+    <!--footer-->
 <div class="footer">
     <div class="container">
         <div class="footer-left">
@@ -749,11 +994,15 @@
     © copyright <b>Futpegado</b>. Todos direitos reservados. <br>
         Design by <b>Eu mesmo.</b>
 </div>
+
 </body>
 </html>
 <script>
     
-    function desfavoritar(tirar){
+    function desfavoritar1(tirar){
+        tirar.style.display = "none";
+    }
+    function desfavoritar2(tirar){
         tirar.style.display = "none";
     }
     function aparecer(jog){
