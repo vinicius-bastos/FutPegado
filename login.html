@@ -42,9 +42,9 @@
                 <p class="description description-second">Ou use seu email para se registrar</p>
                 <form  class="form">
                     <label class="label-input" for=""><i class="far fa-user icon-modify"></i><input type="text" class="text" placeholder="Nome"></label>
-                    <label class="label-input" for=""><i class="far fa-envelope icon-modify"></i><input type="text" class="email" placeholder="Email"></label>
+                    <label class="label-input" for=""><i class="far fa-envelope icon-modify"></i><input id="remail" type="text"  placeholder="Email"><input style="width: 50%;" class="msg_email" id="msg_email"></label>
                     <label class="label-input" for=""><i class="fas fa-lock icon-modify"></i><input type="password" class="password" placeholder="Senha"></label>
-                    <button class="btn btn-second">Registrar-se</button>
+                    <button onclick="r_email()" class="btn btn-second">Registrar-se</button>
                 </form>
             </div>
         </div>
@@ -80,7 +80,7 @@
                 </div>
                 <p class="description description-second">Ou use seu email para se logar</p>
                 <form  class="form">
-                    <label class="label-input" for=""><i class="far fa-envelope icon-modify"></i><input type="text" class="email" placeholder="Email"></label>
+                    <label class="label-input" for=""><i class="far fa-envelope icon-modify"></i><input type="email" class="email" placeholder="Email"></label>
                     <label class="label-input" for=""><i class="fas fa-lock icon-modify"></i><input type="password" class="password" placeholder="Senha"></label>
                     <a class="forgot-password" href="#">esqueceu sua senha?</a>
                     <button class="btn btn-second">Entrar</button>
@@ -91,3 +91,14 @@
     <script src="js/app.js"></script>
 </body>
 </html>
+<script>
+    function r_email(){
+        let email = remail.value;
+        if (email.indexOf('@') > -1){
+            msg_email.value = "";
+        }
+        else{
+            msg_email.value = "Email NÃO valido";
+        }
+    }
+</script>

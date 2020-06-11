@@ -148,7 +148,7 @@ body {
 }
 .form input{
     height: 45px;
-    width: 100%;
+    width: 70%;
     border-radius: 4px 4px 4px 4px;
     border: 2px rgb(183, 218, 183) solid;
     padding-left: 5px;
@@ -376,3 +376,10 @@ body {
     }
 }
 
+.msg_email{
+    width: 40%;
+    border-radius: 4px;
+    color: red;
+
+    
+}
